@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="PE(Mosip):war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/PE_Mosip__war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="PE(Mosip)/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="PE(Mosip)" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

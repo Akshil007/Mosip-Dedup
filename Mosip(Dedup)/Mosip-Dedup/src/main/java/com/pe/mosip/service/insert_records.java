@@ -1,11 +1,8 @@
 package com.pe.mosip.service;
 
 import com.pe.mosip.bean.Demo_Details;
-import com.pe.mosip.dao.implementation.DemoDaoimpl;
-import com.pe.mosip.util.SessionUtil;
-import org.hibernate.Session;
 import com.pe.mosip.dao.DemoDao;
-import org.springframework.stereotype.Service;
+import com.pe.mosip.dao.implementation.DemoDaoimpl;
 
 import java.util.Scanner;
 
