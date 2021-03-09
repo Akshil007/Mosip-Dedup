@@ -15,7 +15,6 @@ public class CompareDaoimpl implements CompareDao {
             session.beginTransaction();
             Query query=session.createQuery("delete from Compare_Record");
             query.executeUpdate();
-
             session.save(compare_record);
             session.getTransaction().commit();
             session.close();

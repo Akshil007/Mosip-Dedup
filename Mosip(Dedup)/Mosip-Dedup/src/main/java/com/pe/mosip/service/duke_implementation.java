@@ -4,24 +4,23 @@ package com.pe.mosip.service;
 import no.priv.garshol.duke.Record;
 import no.priv.garshol.duke.*;
 import no.priv.garshol.duke.matchers.PrintMatchListener;
+import org.xml.sax.SAXException;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
 public class duke_implementation {
-    public static void main(String[] argv) throws Exception {
+    public void identify() throws IOException, SAXException {
             Configuration config = ConfigLoader.load("src/main/resources/duke_cfg.xml");
             Processor proc = new Processor(config);
-           // Duke duke=new Duke();
-
-            // System.out.println(proc);
 
         proc.addMatchListener(new PrintMatchListener(true, true, true, true,
                     config.getProperties(),
                     true));
 
 //        System.out.println(config.isDeduplicationMode());
-        showdata(config);
+            showdata(config);
             proc.link();
             proc.close();
         }

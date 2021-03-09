@@ -72,4 +72,10 @@ public class Compare_Record {
     public void setId(int id) {
         this.id = id;
     }
+
+    public String toString(Compare_Record compare_record)
+    {
+        return compare_record.getFull_name()+"\n"+compare_record.getAddress()
+                +"\n"+compare_record.getDob();
+    }
 }

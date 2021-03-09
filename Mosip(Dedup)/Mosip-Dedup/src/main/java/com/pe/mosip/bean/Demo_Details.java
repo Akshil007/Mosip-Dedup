@@ -32,6 +32,14 @@ public class Demo_Details {
     public Demo_Details() {
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
     public String getFull_name() {
         return full_name;
     }
