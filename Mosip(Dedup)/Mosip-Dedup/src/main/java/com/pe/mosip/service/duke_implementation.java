@@ -16,13 +16,18 @@ public class duke_implementation{
     public ArrayList<String> identify() throws IOException, SAXException {
         Configuration config = ConfigLoader.load("src/main/resources/duke_cfg.xml");
         Processor proc = new Processor(config);
+
+        //for storing and getting output in memory
         InMemoryClassDatabase inMemoryClassDatabase=new InMemoryClassDatabase();
         ClassDatabaseMatchListener classDatabaseMatchListener=new ClassDatabaseMatchListener(config,inMemoryClassDatabase);
         proc.addMatchListener(classDatabaseMatchListener);
 
+        //for printing output on terminal
+        PrintMatchListener printMatchListener = new PrintMatchListener(true, true, true, true, config.getProperties(), true);
+        proc.addMatchListener(printMatchListener);
+
         showdata(config);
         proc.link();
-        System.out.println("Information=" + inMemoryClassDatabase.getClassCount());
         Iterator<Collection<String>> i=inMemoryClassDatabase.getClasses();
         ArrayList<String> list=new ArrayList<>();
         while(i.hasNext())
@@ -34,15 +39,10 @@ public class duke_implementation{
             }
         }
         list.remove(0);
+
         proc.close();
+
         return list;
-//        PrintMatchListener printMatchListener = new PrintMatchListener(true, true, true, true, config.getProperties(), true);
-//        proc.addMatchListener(printMatchListener);
-//
-//        showdata(config);
-//        proc.link();
-//        System.out.println("Information=" + printMatchListener.getMatchCount());
-//        proc.close();
     }
     private static void showdata(Configuration config) {
         List<Property> props = config.getProperties();

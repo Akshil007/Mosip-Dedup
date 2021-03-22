@@ -1,7 +1,7 @@
 <duke>
     <schema>
-        <threshold>0.8</threshold>
-        <maybe-threshold>0.75</maybe-threshold>
+        <threshold>0.95</threshold>
+        <maybe-threshold>0.9</maybe-threshold>
 <!--        <path>test</path>-->
 
         <property type="id">
