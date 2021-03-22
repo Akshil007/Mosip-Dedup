@@ -33,6 +33,7 @@ public class duke_implementation{
                 System.out.println(s);
             }
         }
+        list.remove(0);
         proc.close();
         return list;
 //        PrintMatchListener printMatchListener = new PrintMatchListener(true, true, true, true, config.getProperties(), true);

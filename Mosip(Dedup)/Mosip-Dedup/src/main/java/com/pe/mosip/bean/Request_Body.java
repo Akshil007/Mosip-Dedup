@@ -2,32 +2,23 @@ package com.pe.mosip.bean;
 
 import javax.persistence.*;
 
-@Entity
 public class Request_Body {
 
-    @Id
-    @Column
+
     String Id;
 
-    @Column
     String version;
 
-    @Column
     String requestId;
 
-    @Column
     String requestTime;
 
-    @Column
     String referenceId;
 
-    @Column
     String refernceURL;
 
-    @OneToOne(mappedBy = "demo_Details",cascade = {CascadeType.PERSIST,CascadeType.REMOVE})
     Demo_Details demo_details;
 
-    @OneToOne(mappedBy = "compare_record",cascade = {CascadeType.PERSIST,CascadeType.REMOVE})
     Compare_Record compare_record;
 
     public Request_Body(String id, String version, String requestId, String requestTime, String referenceId, String refernceURL, Demo_Details demo_details, Compare_Record compare_record) {

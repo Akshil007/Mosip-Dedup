@@ -1,36 +1,26 @@
 package com.pe.mosip.bean;
 
-import javax.persistence.*;
-import java.util.*;
-
-@Entity
+import java.util.List;
 public class Responce_Body {
-    @Id
-    @Column
     String id;
 
-    @Column
     String requestId;
 
-    @Column
-    String responcetime;
+    String responsetime;
 
-    @Column
     String returnValue;
 
-    @Column
     String failureReason;
 
-    @ManyToMany
-    List<String> ids;
+    List<String> MatchingIds;
 
     public Responce_Body() {
     }
 
-    public Responce_Body(String id, String requestId, String responcetime, String returnValue, String failureReason) {
+    public Responce_Body(String id, String requestId, String responsetime, String returnValue, String failureReason) {
         this.id = id;
         this.requestId = requestId;
-        this.responcetime = responcetime;
+        this.responsetime = responsetime;
         this.returnValue = returnValue;
         this.failureReason = failureReason;
     }
@@ -51,12 +41,12 @@ public class Responce_Body {
         this.requestId = requestId;
     }
 
-    public String getResponcetime() {
-        return responcetime;
+    public String getResponsetime() {
+        return responsetime;
     }
 
-    public void setResponcetime(String responcetime) {
-        this.responcetime = responcetime;
+    public void setResponsetime(String responcetime) {
+        this.responsetime = responcetime;
     }
 
     public String getReturnValue() {
@@ -73,5 +63,13 @@ public class Responce_Body {
 
     public void setFailureReason(String failureReason) {
         this.failureReason = failureReason;
+    }
+
+    public List<String> getMatchingIds() {
+        return MatchingIds;
+    }
+
+    public void setMatchingIds(List<String> matchingIds) {
+        this.MatchingIds = matchingIds;
     }
 }

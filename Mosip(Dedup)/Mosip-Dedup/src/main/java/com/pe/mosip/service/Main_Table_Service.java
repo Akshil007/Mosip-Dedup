@@ -29,6 +29,7 @@ public class Main_Table_Service {
         {
             duke_implementation duke_implementation=new duke_implementation();
             ArrayList<String> sList=duke_implementation.identify();
+            responce_body.setMatchingIds(sList);
             responce_body.setReturnValue("1");
         }
         else if(request_body.getId().equals("mosip.dedup.delete"))
