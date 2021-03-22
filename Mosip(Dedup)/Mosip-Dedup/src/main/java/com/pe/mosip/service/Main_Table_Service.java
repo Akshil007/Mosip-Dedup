@@ -5,9 +5,11 @@ import com.pe.mosip.bean.Request_Body;
 import com.pe.mosip.bean.Responce_Body;
 import com.pe.mosip.dao.DemoDao;
 import com.pe.mosip.dao.implementation.DemoDaoimpl;
+
 import org.xml.sax.SAXException;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 public class Main_Table_Service {
     DemoDao demoDao=new DemoDaoimpl();
@@ -26,7 +28,7 @@ public class Main_Table_Service {
         else if(request_body.getId().equals("mosip.dedup.identify"))
         {
             duke_implementation duke_implementation=new duke_implementation();
-            duke_implementation.identify();
+            ArrayList<String> sList=duke_implementation.identify();
             responce_body.setReturnValue("1");
         }
         else if(request_body.getId().equals("mosip.dedup.delete"))

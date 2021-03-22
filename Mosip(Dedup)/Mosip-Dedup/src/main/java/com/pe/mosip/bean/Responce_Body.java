@@ -1,8 +1,7 @@
 package com.pe.mosip.bean;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.*;
 
 @Entity
 public class Responce_Body {
@@ -21,6 +20,9 @@ public class Responce_Body {
 
     @Column
     String failureReason;
+
+    @ManyToMany
+    List<String> ids;
 
     public Responce_Body() {
     }

@@ -86,7 +86,7 @@
 <!--        <column name="?uri"-->
 <!--                property="ID"/>-->
 <!--        <column name="http://xmlns.com/foaf/0.1/name"-->
-<!--                cleaner="no.priv.garshol.duke.cleaners.LowerCaseNormalizeCleaner"-->
+<!--                cleaner="LowerCaseNormalizeCleaner"-->
 <!--                property="NAME"/>-->
 <!--        <column name="http://xmlns.com/foaf/0.1/mbox_sha1sum"-->
 <!--                property="MBOX_HASH"/>-->
