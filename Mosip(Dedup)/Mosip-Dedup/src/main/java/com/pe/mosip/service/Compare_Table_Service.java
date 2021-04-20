@@ -15,12 +15,12 @@ public class Compare_Table_Service {
         if((request_body.getId()).equals("mosip.dedup.compare_insert"))
         {
             Compare_Record compare_record=request_body.getCompare_record();
-            if(compareDao.insert(compare_record)==200) {
-                responce_body.setReturnValue("1");
-            }
-            else{
-                responce_body.setReturnValue("2");
-            }
+//            if(compareDao.insert(compare_record)==200) {
+//                responce_body.setReturnValue("1");
+//            }
+//            else{
+//                responce_body.setReturnValue("2");
+//            }
         }
         else
         {

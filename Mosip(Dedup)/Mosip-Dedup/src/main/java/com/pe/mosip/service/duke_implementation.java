@@ -1,4 +1,5 @@
 package com.pe.mosip.service;
+import com.pe.mosip.bean.Comparison_Result;
 import no.priv.garshol.duke.*;
 
 import no.priv.garshol.duke.Record;
@@ -13,7 +14,7 @@ import java.util.Iterator;
 import java.util.List;
 
 public class duke_implementation{
-    public ArrayList<String> identify() throws IOException, SAXException {
+    public ArrayList<Comparison_Result> identify() throws IOException, SAXException {
         Configuration config = ConfigLoader.load("src/main/resources/duke_cfg.xml");
         Processor proc = new Processor(config);
 
@@ -29,20 +30,20 @@ public class duke_implementation{
         showdata(config);
         proc.link();
         Iterator<Collection<String>> i=inMemoryClassDatabase.getClasses();
-        ArrayList<String> list=new ArrayList<>();
+        ArrayList<Comparison_Result> ans=new ArrayList<>();
         while(i.hasNext())
         {
-            list.addAll((ArrayList<String>) i.next());
-            for(String s:list)
-            {
-                System.out.println(s);
-            }
+            Comparison_Result comparison_result=new Comparison_Result();
+            ArrayList<String> list = (ArrayList<String>) i.next();
+            comparison_result.setId(list.get(0));
+            list.remove(0);
+            comparison_result.setMatching_ids(list);
+            ans.add(comparison_result);
         }
-        list.remove(0);
 
         proc.close();
 
-        return list;
+        return ans;
     }
     private static void showdata(Configuration config) {
         List<Property> props = config.getProperties();

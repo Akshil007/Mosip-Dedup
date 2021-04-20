@@ -1,9 +1,9 @@
 package com.pe.mosip.bean;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 
 public class Request_Body {
-
 
     String Id;
 
@@ -21,7 +21,9 @@ public class Request_Body {
 
     Compare_Record compare_record;
 
-    public Request_Body(String id, String version, String requestId, String requestTime, String referenceId, String refernceURL, Demo_Details demo_details, Compare_Record compare_record) {
+    ArrayList<Compare_Record> records;
+
+    public Request_Body(String id, String version, String requestId, String requestTime, String referenceId, String refernceURL, Demo_Details demo_details, Compare_Record compare_record, ArrayList<Compare_Record> records) {
         Id = id;
         this.version = version;
         this.requestId = requestId;
@@ -30,6 +32,7 @@ public class Request_Body {
         this.refernceURL = refernceURL;
         this.demo_details = demo_details;
         this.compare_record = compare_record;
+        this.records = records;
     }
 
     public Request_Body() {
@@ -97,6 +100,14 @@ public class Request_Body {
 
     public void setDemo_details(Demo_Details demo_details) {
         this.demo_details = demo_details;
+    }
+
+    public ArrayList<Compare_Record> getRecords() {
+        return records;
+    }
+
+    public void setRecords(ArrayList<Compare_Record> records) {
+        this.records = records;
     }
 
     public String toString(Request_Body request_body)

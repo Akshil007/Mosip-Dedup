@@ -12,17 +12,18 @@ public class Responce_Body {
 
     String failureReason;
 
-    List<String> MatchingIds;
+    List<Comparison_Result> Result;
 
     public Responce_Body() {
     }
 
-    public Responce_Body(String id, String requestId, String responsetime, String returnValue, String failureReason) {
+    public Responce_Body(String id, String requestId, String responsetime, String returnValue, String failureReason, List<Comparison_Result> result) {
         this.id = id;
         this.requestId = requestId;
         this.responsetime = responsetime;
         this.returnValue = returnValue;
         this.failureReason = failureReason;
+        Result = result;
     }
 
     public String getId() {
@@ -65,11 +66,11 @@ public class Responce_Body {
         this.failureReason = failureReason;
     }
 
-    public List<String> getMatchingIds() {
-        return MatchingIds;
+    public List<Comparison_Result> getResult() {
+        return Result;
     }
 
-    public void setMatchingIds(List<String> matchingIds) {
-        this.MatchingIds = matchingIds;
+    public void setResult(List<Comparison_Result> result) {
+        Result = result;
     }
 }

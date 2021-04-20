@@ -7,15 +7,20 @@ import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.query.Query;
 
+import java.util.*;
+
 public class CompareDaoimpl implements CompareDao {
     @Override
-    public int insert(Compare_Record compare_record) {
+    public int insert(ArrayList<Compare_Record> compare_records) {
         Session session = SessionUtil.getSession();
         try {
             session.beginTransaction();
             Query query=session.createQuery("delete from Compare_Record");
             query.executeUpdate();
-            session.save(compare_record);
+            for(Compare_Record c:compare_records)
+            {
+                session.save(c);
+            }
             session.getTransaction().commit();
             session.close();
             return 200;
