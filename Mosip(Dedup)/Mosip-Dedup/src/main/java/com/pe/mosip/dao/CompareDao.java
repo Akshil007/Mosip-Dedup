@@ -6,4 +6,5 @@ import java.util.ArrayList;
 
 public interface CompareDao {
     public int insert(ArrayList<Compare_Record> compare_records);
+    Compare_Record get_record(String id);
 }

@@ -2,6 +2,7 @@ package com.pe.mosip.bean;
 
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 public class Demo_Details {

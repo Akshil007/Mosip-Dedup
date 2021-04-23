@@ -17,6 +17,13 @@
 		<java.version>1.8</java.version>
 	</properties>
 	<dependencies>
+		<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-activemq -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-activemq</artifactId>
+			<version>2.4.2</version>
+		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>

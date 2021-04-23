@@ -1,5 +1,7 @@
 package com.pe.mosip.service;
 import com.pe.mosip.bean.Comparison_Result;
+import com.pe.mosip.dao.CompareDao;
+import com.pe.mosip.dao.implementation.CompareDaoimpl;
 import no.priv.garshol.duke.*;
 
 import no.priv.garshol.duke.Record;
@@ -15,6 +17,8 @@ import java.util.List;
 
 public class duke_implementation{
     public ArrayList<Comparison_Result> identify() throws IOException, SAXException {
+        CompareDao compareDao=new CompareDaoimpl();
+
         Configuration config = ConfigLoader.load("src/main/resources/duke_cfg.xml");
         Processor proc = new Processor(config);
 
@@ -35,7 +39,7 @@ public class duke_implementation{
         {
             Comparison_Result comparison_result=new Comparison_Result();
             ArrayList<String> list = (ArrayList<String>) i.next();
-            comparison_result.setId(list.get(0));
+            comparison_result.setCompare_record(compareDao.get_record(list.get(0)));
             list.remove(0);
             comparison_result.setMatching_ids(list);
             ans.add(comparison_result);

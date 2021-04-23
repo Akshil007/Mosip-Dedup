@@ -1,7 +1,8 @@
 package com.pe.mosip.bean;
 
+import java.io.Serializable;
 import java.util.List;
-public class Responce_Body {
+public class Responce_Body implements Serializable {
     String id;
 
     String requestId;
@@ -72,5 +73,17 @@ public class Responce_Body {
 
     public void setResult(List<Comparison_Result> result) {
         Result = result;
+    }
+
+    @Override
+    public String toString() {
+        return "Responce_Body{" +
+                "id='" + id + '\'' +
+                ", requestId='" + requestId + '\'' +
+                ", responsetime='" + responsetime + '\'' +
+                ", returnValue='" + returnValue + '\'' +
+                ", failureReason='" + failureReason + '\'' +
+                ", Result=" + Result.toString() +
+                '}';
     }
 }

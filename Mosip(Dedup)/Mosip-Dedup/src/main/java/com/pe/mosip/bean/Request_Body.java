@@ -1,9 +1,10 @@
 package com.pe.mosip.bean;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Request_Body {
+public class Request_Body implements Serializable {
 
     String Id;
 
@@ -110,9 +111,18 @@ public class Request_Body {
         this.records = records;
     }
 
-    public String toString(Request_Body request_body)
-    {
-        return request_body.getId()+"\n"+request_body.getVersion()+"\n"+request_body.getDemo_details().getFull_name()+"\n"+request_body.getDemo_details().getAddress()
-                +"\n"+request_body.getDemo_details().getDob();
+    @Override
+    public String toString() {
+        return "Request_Body{" +
+                "Id='" + Id + '\'' +
+                ", version='" + version + '\'' +
+                ", requestId='" + requestId + '\'' +
+                ", requestTime='" + requestTime + '\'' +
+                ", referenceId='" + referenceId + '\'' +
+                ", refernceURL='" + refernceURL + '\'' +
+                ", demo_details=" + demo_details +
+                ", compare_record=" + compare_record +
+                ", records=" + records +
+                '}';
     }
 }

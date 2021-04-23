@@ -1,9 +1,10 @@
 package com.pe.mosip.bean;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
-public class Compare_Record {
+public class Compare_Record implements Serializable {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Id
     private int id;
@@ -73,9 +74,14 @@ public class Compare_Record {
         this.id = id;
     }
 
-    public String toString(Compare_Record compare_record)
-    {
-        return compare_record.getFull_name()+"\n"+compare_record.getAddress()
-                +"\n"+compare_record.getDob();
+    @Override
+    public String toString() {
+        return "Compare_Record{" +
+                "id=" + id +
+                ", full_name='" + full_name + '\'' +
+                ", gender='" + gender + '\'' +
+                ", dob='" + dob + '\'' +
+                ", address='" + address + '\'' +
+                '}';
     }
 }

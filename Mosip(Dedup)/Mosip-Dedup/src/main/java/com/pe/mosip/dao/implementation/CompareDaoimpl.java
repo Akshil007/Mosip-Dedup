@@ -32,4 +32,28 @@ public class CompareDaoimpl implements CompareDao {
             session.close();
         }
     }
+
+    @Override
+    public Compare_Record get_record(String id) {
+        Session session = SessionUtil.getSession();
+        try {
+            session.beginTransaction();
+            int ID=Integer.parseInt(id);
+            Query query=session.createQuery("from Compare_Record where id=:id");
+            query.setParameter("id",ID);
+            ArrayList<Compare_Record> list= (ArrayList<Compare_Record>) query.getResultList();
+            if(list.size()==0)
+                return null;
+            else
+                return list.get(0);
+        }
+        catch (HibernateException exception) {
+            System.out.print(exception.getLocalizedMessage());
+            return null;
+        }finally {
+            session.close();
+        }
+    }
+
+
 }
