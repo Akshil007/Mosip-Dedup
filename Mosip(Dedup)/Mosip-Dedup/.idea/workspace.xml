@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand />
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="865495ad-0b4d-44e7-b28a-740267deebdf" name="Default Changelist" comment="rest api added">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pe/mosip/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pe/mosip/Config/jmsConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pe/mosip/Controller/DemoController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pe/mosip/Listener/Deprecated_PushResToOutbound.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pe/mosip/Listener/Deprecated_ResponceConsumer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pe/mosip/Listener/RequestConsumer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pe/mosip/bean/Compare_Record.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pe/mosip/bean/Comparison_Result.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pe/mosip/bean/Demo_Details.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pe/mosip/bean/Request_Body.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pe/mosip/bean/Responce_Body.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pe/mosip/dao/CompareDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pe/mosip/dao/DemoDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pe/mosip/dao/implementation/CompareDaoimpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pe/mosip/dao/implementation/DemoDaoimpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pe/mosip/service/Deprecated_Compare_Table_Service.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pe/mosip/service/Main_Table_Service.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pe/mosip/service/OutputService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pe/mosip/service/Test_insert_records.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pe/mosip/service/duke_implementation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pe/mosip/util/SessionUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/duke_cfg.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/pe/mosip/ApplicationTests.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="hibernate-configuration-5.2" />
+        <option value="hibernate-main-5.2" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$USER_HOME$/.m2/wrapper/dists/apache-maven-3.6.3-bin/1iopthnavndlasol9gbrbg6bf2/apache-maven-3.6.3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1oeq9mxBJRDecSFVtu0hLZW0Mwx" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/com/example/Mosip/Dedup/dao/implementation" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Demographic-Deduplication" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/example/Mosip/Dedup/service" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/example/Mosip/Dedup/dao" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.pe.mosip.util" />
+      <recent name="com.example.Mosip.Dedup.dao" />
+      <recent name="com.example.Mosip.Dedup.Controller" />
+      <recent name="com.example.Mosip.Dedup.bean" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.Application">
+    <configuration name="duke-test" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.pe.mosip.service.duke_implementation" />
+      <module name="Demographic-Deduplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="insert-test" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.pe.mosip.service.Test_insert_records" />
+      <module name="Demographic-Deduplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Demographic-Deduplication" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Demographic-Deduplication" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="Demographic-Deduplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.pe.mosip.Application" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.duke-test" />
+      <item itemvalue="Application.insert-test" />
+      <item itemvalue="Spring Boot.Application" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="865495ad-0b4d-44e7-b28a-740267deebdf" name="Default Changelist" comment="" />
+      <created>1613657259124</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1613657259124</updated>
+      <workItem from="1613657260247" duration="3631000" />
+      <workItem from="1613755514115" duration="406000" />
+      <workItem from="1613757122054" duration="2278000" />
+      <workItem from="1613814228334" duration="1029000" />
+      <workItem from="1613829122458" duration="2702000" />
+      <workItem from="1614620130135" duration="686000" />
+      <workItem from="1615112140630" duration="1339000" />
+      <workItem from="1615121790877" duration="7552000" />
+      <workItem from="1615179774167" duration="2150000" />
+      <workItem from="1615263306305" duration="3253000" />
+      <workItem from="1615359400185" duration="25000" />
+      <workItem from="1615371516214" duration="1981000" />
+      <workItem from="1615379217573" duration="36000" />
+      <workItem from="1616318044241" duration="376000" />
+      <workItem from="1616321553412" duration="10965000" />
+      <workItem from="1616337074099" duration="1662000" />
+      <workItem from="1616342473375" duration="386000" />
+      <workItem from="1616343337300" duration="27000" />
+      <workItem from="1616343409845" duration="4342000" />
+      <workItem from="1616403255493" duration="2470000" />
+      <workItem from="1617010911689" duration="204000" />
+      <workItem from="1617711038735" duration="1731000" />
+      <workItem from="1618145386014" duration="24000" />
+      <workItem from="1618549358722" duration="599000" />
+      <workItem from="1618663217580" duration="2388000" />
+      <workItem from="1618746922555" duration="6809000" />
+      <workItem from="1618837100366" duration="641000" />
+      <workItem from="1618919210181" duration="3885000" />
+      <workItem from="1619099238992" duration="674000" />
+      <workItem from="1619159209214" duration="13733000" />
+      <workItem from="1619183936726" duration="6321000" />
+      <workItem from="1619193459007" duration="17000" />
+      <workItem from="1619202806132" duration="3242000" />
+      <workItem from="1619282969969" duration="5985000" />
+    </task>
+    <task id="LOCAL-00001" summary="rest api added">
+      <created>1615263937220</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1615263937220</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:/home/akshil/IIITB/sem-2/PE/Mosip(Dedup)/Mosip-Dedup/src/main/resources/templates" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="1" value="TOOL_WINDOW" />
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="rest api added" />
+    <option name="LAST_COMMIT_MESSAGE" value="rest api added" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="849" y="400" width="793" height="344" key="#Assign_Data_Sources" timestamp="1615122513784">
+      <screen x="72" y="44" width="1848" height="1036" />
+    </state>
+    <state x="849" y="400" width="793" height="344" key="#Assign_Data_Sources/72.44.1848.1036@72.44.1848.1036" timestamp="1615122513784" />
+    <state x="72" y="44" width="1536" height="1036" key="#Project_Structure" timestamp="1613662934964">
+      <screen x="72" y="44" width="1848" height="1036" />
+    </state>
+    <state x="72" y="44" width="1536" height="1036" key="#Project_Structure/72.44.1848.1036@72.44.1848.1036" timestamp="1613662934964" />
+    <state x="361" y="44" width="1559" height="1036" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1616342365360">
+      <screen x="72" y="44" width="1848" height="1036" />
+    </state>
+    <state x="361" y="44" width="1559" height="1036" key="#com.intellij.execution.impl.EditConfigurationsDialog/72.44.1848.1036@72.44.1848.1036" timestamp="1616342365360" />
+    <state x="558" y="326" width="866" height="478" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1616329813909">
+      <screen x="72" y="44" width="1848" height="1036" />
+    </state>
+    <state x="558" y="326" width="866" height="478" key="#com.intellij.fileTypes.FileTypeChooser/72.44.1848.1036@72.44.1848.1036" timestamp="1616329813909" />
+    <state x="710" y="147" width="859" height="865" key="#com.intellij.ide.util.MemberChooser" timestamp="1619205144153">
+      <screen x="72" y="44" width="1848" height="1036" />
+    </state>
+    <state x="710" y="147" width="859" height="865" key="#com.intellij.ide.util.MemberChooser/72.44.1848.1036@72.44.1848.1036" timestamp="1619205144153" />
+    <state x="742" y="274" width="787" height="619" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1613755531150">
+      <screen x="72" y="44" width="1848" height="1036" />
+    </state>
+    <state x="742" y="274" width="787" height="619" key="#com.intellij.ide.util.TreeClassChooserDialog/72.44.1848.1036@72.44.1848.1036" timestamp="1613755531150" />
+    <state x="72" y="54" width="1187" height="1022" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1613664321871">
+      <screen x="72" y="44" width="1848" height="1036" />
+    </state>
+    <state x="72" y="54" width="1187" height="1022" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/72.44.1848.1036@72.44.1848.1036" timestamp="1613664321871" />
+    <state x="72" y="44" width="1511" height="1036" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1619184622523">
+      <screen x="72" y="44" width="1848" height="1036" />
+    </state>
+    <state x="72" y="44" width="1511" height="1036" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/72.44.1848.1036@72.44.1848.1036" timestamp="1619184622523" />
+    <state x="673" y="206" width="636" height="719" key="FileChooserDialogImpl" timestamp="1619291089811">
+      <screen x="72" y="44" width="1848" height="1036" />
+    </state>
+    <state x="673" y="206" width="636" height="719" key="FileChooserDialogImpl/72.44.1848.1036@72.44.1848.1036" timestamp="1619291089811" />
+    <state width="1778" height="560" key="GridCell.Tab.0.bottom" timestamp="1619291094772">
+      <screen x="72" y="44" width="1848" height="1036" />
+    </state>
+    <state width="1778" height="560" key="GridCell.Tab.0.bottom/72.44.1848.1036@72.44.1848.1036" timestamp="1619291094772" />
+    <state width="1778" height="560" key="GridCell.Tab.0.center" timestamp="1619291094771">
+      <screen x="72" y="44" width="1848" height="1036" />
+    </state>
+    <state width="1778" height="560" key="GridCell.Tab.0.center/72.44.1848.1036@72.44.1848.1036" timestamp="1619291094771" />
+    <state width="1778" height="560" key="GridCell.Tab.0.left" timestamp="1619291094771">
+      <screen x="72" y="44" width="1848" height="1036" />
+    </state>
+    <state width="1778" height="560" key="GridCell.Tab.0.left/72.44.1848.1036@72.44.1848.1036" timestamp="1619291094771" />
+    <state width="1778" height="560" key="GridCell.Tab.0.right" timestamp="1619291094771">
+      <screen x="72" y="44" width="1848" height="1036" />
+    </state>
+    <state width="1778" height="560" key="GridCell.Tab.0.right/72.44.1848.1036@72.44.1848.1036" timestamp="1619291094771" />
+    <state width="1778" height="560" key="GridCell.Tab.1.bottom" timestamp="1619291094773">
+      <screen x="72" y="44" width="1848" height="1036" />
+    </state>
+    <state width="1778" height="560" key="GridCell.Tab.1.bottom/72.44.1848.1036@72.44.1848.1036" timestamp="1619291094773" />
+    <state width="1778" height="560" key="GridCell.Tab.1.center" timestamp="1619291094772">
+      <screen x="72" y="44" width="1848" height="1036" />
+    </state>
+    <state width="1778" height="560" key="GridCell.Tab.1.center/72.44.1848.1036@72.44.1848.1036" timestamp="1619291094772" />
+    <state width="1778" height="560" key="GridCell.Tab.1.left" timestamp="1619291094772">
+      <screen x="72" y="44" width="1848" height="1036" />
+    </state>
+    <state width="1778" height="560" key="GridCell.Tab.1.left/72.44.1848.1036@72.44.1848.1036" timestamp="1619291094772" />
+    <state width="1778" height="560" key="GridCell.Tab.1.right" timestamp="1619291094772">
+      <screen x="72" y="44" width="1848" height="1036" />
+    </state>
+    <state width="1778" height="560" key="GridCell.Tab.1.right/72.44.1848.1036@72.44.1848.1036" timestamp="1619291094772" />
+    <state x="298" y="56" width="1386" height="1019" key="Maven.ArtifactSearchDialog" timestamp="1616331109714">
+      <screen x="72" y="44" width="1848" height="1036" />
+    </state>
+    <state x="298" y="56" width="1386" height="1019" key="Maven.ArtifactSearchDialog/72.44.1848.1036@72.44.1848.1036" timestamp="1616331109714" />
+    <state x="223" y="44" width="1536" height="1036" key="SettingsEditor" timestamp="1618748344638">
+      <screen x="72" y="44" width="1848" height="1036" />
+    </state>
+    <state x="223" y="44" width="1536" height="1036" key="SettingsEditor/72.44.1848.1036@72.44.1848.1036" timestamp="1618748344638" />
+    <state x="391" y="173" width="1200" height="785" key="Vcs.Push.Dialog.v2" timestamp="1615264172736">
+      <screen x="72" y="44" width="1848" height="1036" />
+    </state>
+    <state x="391" y="173" width="1200" height="785" key="Vcs.Push.Dialog.v2/72.44.1848.1036@72.44.1848.1036" timestamp="1615264172736" />
+    <state x="328" y="316" width="695" height="506" key="chooseDestDirectoryDialog" timestamp="1613664207413">
+      <screen x="72" y="44" width="1848" height="1036" />
+    </state>
+    <state x="328" y="316" width="695" height="506" key="chooseDestDirectoryDialog/72.44.1848.1036@72.44.1848.1036" timestamp="1613664207413" />
+    <state x="419" y="107" width="1144" height="916" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1618664630980">
+      <screen x="72" y="44" width="1848" height="1036" />
+    </state>
+    <state x="419" y="107" width="1144" height="916" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/72.44.1848.1036@72.44.1848.1036" timestamp="1618664630980" />
+    <state x="546" y="158" width="899" height="900" key="find.popup" timestamp="1619291034656">
+      <screen x="72" y="44" width="1848" height="1036" />
+    </state>
+    <state x="546" y="158" width="899" height="900" key="find.popup/72.44.1848.1036@72.44.1848.1036" timestamp="1619291034656" />
+    <state x="72" y="44" width="1838" height="1036" key="new project wizard" timestamp="1615359423319">
+      <screen x="72" y="44" width="1848" height="1036" />
+    </state>
+    <state x="72" y="44" width="1838" height="1036" key="new project wizard/72.44.1848.1036@72.44.1848.1036" timestamp="1615359423319" />
+    <state x="743" y="239" width="496" height="652" key="refactoring.ChangeSignatureDialog" timestamp="1618747135152">
+      <screen x="72" y="44" width="1848" height="1036" />
+    </state>
+    <state x="743" y="239" width="496" height="652" key="refactoring.ChangeSignatureDialog/72.44.1848.1036@72.44.1848.1036" timestamp="1618747135151" />
+    <state x="482" y="44" width="1023" height="1470" key="search.everywhere.popup" timestamp="1619287231277">
+      <screen x="72" y="44" width="1848" height="1036" />
+    </state>
+    <state x="482" y="44" width="1023" height="1470" key="search.everywhere.popup/72.44.1848.1036@72.44.1848.1036" timestamp="1619287231277" />
+  </component>
+</project>
