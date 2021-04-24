@@ -18,10 +18,9 @@ public class RequestConsumer {
     @JmsListener(destination = "inbound.queue")
     public void requestListener(Request_Body request_body) throws IOException, SAXException {
         Responce_Body responce_body = main_table_service.request(request_body);
-//        PushResToOutbound pushRestoOutbound =new PushResToOutbound();
-//        pushRestoOutbound.push(responce_body);
+        //PushResToOutbound pushRestoOutbound =new PushResToOutbound();
+        //pushRestoOutbound.push(responce_body);
         list.add(responce_body);
-        System.out.println(list.size());
 
     }
 

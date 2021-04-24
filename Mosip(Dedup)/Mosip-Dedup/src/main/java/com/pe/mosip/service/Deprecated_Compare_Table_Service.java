@@ -7,7 +7,7 @@ import com.pe.mosip.bean.Responce_Body;
 import com.pe.mosip.dao.CompareDao;
 import com.pe.mosip.dao.implementation.CompareDaoimpl;
 
-public class Compare_Table_Service {
+public class Deprecated_Compare_Table_Service {
     CompareDao compareDao=new CompareDaoimpl();
     Main_Table_Service main_table_service=new Main_Table_Service();
     public Responce_Body addDemo(Request_Body request_body) {

@@ -17,16 +17,11 @@ import javax.management.Query;
 import java.util.jar.JarEntry;
 
 @Configuration
-@EnableJms
 public class jmsConfig {
 
     @Value("${spring.activemq.broker-url}")
     private String brokerUrl;
 
-    @Bean
-    public Queue getOutboundQueue(){
-        return new ActiveMQQueue("outbound.queue");
-    }
 
     @Bean
     public Queue getInboundQueue() {

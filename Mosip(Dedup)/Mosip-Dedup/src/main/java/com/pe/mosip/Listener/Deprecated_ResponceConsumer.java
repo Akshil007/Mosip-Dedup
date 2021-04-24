@@ -8,7 +8,7 @@ import java.util.ArrayDeque;
 
 
 @Component
-public class ResponceConsumer {
+public class Deprecated_ResponceConsumer {
 
     ArrayDeque<Responce_Body> list = new ArrayDeque<>();
     @JmsListener(destination = "outbound.queue")

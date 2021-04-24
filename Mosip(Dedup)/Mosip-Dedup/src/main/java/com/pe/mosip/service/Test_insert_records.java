@@ -7,7 +7,7 @@ import com.pe.mosip.dao.implementation.DemoDaoimpl;
 import java.util.Scanner;
 
 
-public class insert_records {
+public class Test_insert_records {
     public static void main(String args[])
     {
         System.out.println("com.pe.mosip.test");

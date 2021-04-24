@@ -9,9 +9,9 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.jms.Queue;
 
 @Component
-public class PushResToOutbound {
+public class Deprecated_PushResToOutbound {
     @Autowired
-    JmsTemplate jmsTemplate;
+    JmsTemplate jmsTemplateOut;
 
     @Autowired
     Queue getOutboundQueue;
