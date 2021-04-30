@@ -18,6 +18,5 @@
         <property name="hibernate.hbm2ddl.auto">update</property>
         <property name="show_sql">true</property>
         <mapping class="com.pe.mosip.bean.Demo_Details"/>
-        <mapping class="com.pe.mosip.bean.Compare_Record"/>
     </session-factory>
 </hibernate-configuration>

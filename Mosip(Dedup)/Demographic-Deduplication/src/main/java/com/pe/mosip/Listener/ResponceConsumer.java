@@ -8,19 +8,17 @@ import java.util.ArrayDeque;
 
 
 @Component
-public class Deprecated_ResponceConsumer {
+public class ResponceConsumer {
 
-    ArrayDeque<Responce_Body> list = new ArrayDeque<>();
-    @JmsListener(destination = "outbound.queue")
+    public static ArrayDeque<Responce_Body> list = new ArrayDeque<>();
+    @JmsListener(destination = "outbound.queue",containerFactory = "out_jmsListenerContainerFactory")
     public void getResponce(Responce_Body responce_body){
         list.add(responce_body);
+        System.out.println(list.size());
     }
 
-    public ArrayDeque<Responce_Body> getList() {
+    public static ArrayDeque<Responce_Body> getList() {
         return list;
     }
 
-    public void setList(ArrayDeque<Responce_Body> list) {
-        this.list = list;
-    }
 }

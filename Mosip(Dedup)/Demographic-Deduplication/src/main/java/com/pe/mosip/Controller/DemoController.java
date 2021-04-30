@@ -1,10 +1,16 @@
 package com.pe.mosip.Controller;
 
+import com.pe.mosip.Listener.PushResToOutbound;
 import com.pe.mosip.Listener.RequestConsumer;
 import com.pe.mosip.bean.Request_Body;
 import com.pe.mosip.bean.Responce_Body;
 import com.pe.mosip.service.OutputService;
+import com.pe.mosip.util.SessionUtil;
+import org.hibernate.HibernateException;
+import org.hibernate.Session;
+import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.jms.core.JmsTemplate;
 import org.springframework.web.bind.annotation.*;
 import org.xml.sax.SAXException;
@@ -18,8 +24,10 @@ import java.util.List;
 @RestController
 public class DemoController {
 
+
+    @Qualifier("in_jmsTemplate")
     @Autowired
-    JmsTemplate jmsTemplate;
+    JmsTemplate in_jmsTemplate;
 
     @Autowired
     Queue getInboundQueue;
@@ -27,7 +35,7 @@ public class DemoController {
     @PostMapping(path = "/request")
     public String demo_main(@RequestBody Request_Body request_body) throws IOException, SAXException {
         System.out.println(getInboundQueue);
-        jmsTemplate.convertAndSend(getInboundQueue, request_body);
+        in_jmsTemplate.convertAndSend(getInboundQueue, request_body);
         return "Request Successfully Queued in inbound queue";
     }
 
@@ -35,7 +43,7 @@ public class DemoController {
     public List<Responce_Body> getNextResponce()
     {
         OutputService outputService = new OutputService();
-        List<Responce_Body> list = outputService.getRecords(5);
+        List<Responce_Body> list = outputService.getRecords(1);
         if(!list.isEmpty())
             return list;
         else
@@ -46,5 +54,7 @@ public class DemoController {
             return list;
         }
     }
+
+
 
 }

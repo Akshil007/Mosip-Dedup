@@ -59,7 +59,7 @@
             <param name="connection-string" value="jdbc:mysql://localhost:3306/demo_records"/>
             <param name="user-name" value="akshil"/>
             <param name="password" value="akshil99"/>
-            <param name="query" value="select * from Compare_Record"/>
+            <param name="query" value="select * from thread"/>
 
             <column name="id" property="ID"/>
             <column name="full_name" property="Name" cleaner="no.priv.garshol.duke.cleaners.LowerCaseNormalizeCleaner"/>

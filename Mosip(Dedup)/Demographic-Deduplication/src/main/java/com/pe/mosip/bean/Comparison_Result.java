@@ -4,23 +4,23 @@ import java.io.Serializable;
 import java.util.ArrayList;
 
 public class Comparison_Result implements Serializable{
-    Compare_Record compare_record;
+    Demo_Details record;
     ArrayList<String> matching_ids;
 
-    public Comparison_Result(Compare_Record compare_record, ArrayList<String> matching_ids) {
-        this.compare_record = compare_record;
+    public Comparison_Result(Demo_Details record, ArrayList<String> matching_ids) {
+        this.record = record;
         this.matching_ids = matching_ids;
     }
 
     public Comparison_Result() {
     }
 
-    public Compare_Record getCompare_record() {
-        return compare_record;
+    public Demo_Details getRecord() {
+        return record;
     }
 
-    public void setCompare_record(Compare_Record compare_record) {
-        this.compare_record = compare_record;
+    public void setRecord(Demo_Details record) {
+        this.record = record;
     }
 
     public ArrayList<String> getMatching_ids() {
@@ -34,7 +34,7 @@ public class Comparison_Result implements Serializable{
     @Override
     public String toString() {
         return "Comparison_Result{" +
-                "compare_record=" + compare_record.toString() +
+                "record=" + record.toString() +
                 ", matching_ids=" + matching_ids +
                 '}';
     }

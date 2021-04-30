@@ -5,7 +5,7 @@ import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
-public class Demo_Details {
+public class Demo_Details implements Serializable{
 
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Id
@@ -71,5 +71,16 @@ public class Demo_Details {
 
     public void setAddress(String address) {
         this.address = address;
+    }
+
+    @Override
+    public String toString() {
+        return "Demo_Details{" +
+                "id=" + id +
+                ", full_name='" + full_name + '\'' +
+                ", gender='" + gender + '\'' +
+                ", dob='" + dob + '\'' +
+                ", address='" + address + '\'' +
+                '}';
     }
 }

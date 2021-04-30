@@ -8,40 +8,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="865495ad-0b4d-44e7-b28a-740267deebdf" name="Default Changelist" comment="rest api added">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pe/mosip/Application.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pe/mosip/Config/jmsConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pe/mosip/Controller/DemoController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pe/mosip/Listener/Deprecated_PushResToOutbound.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pe/mosip/Listener/Deprecated_ResponceConsumer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pe/mosip/Listener/RequestConsumer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pe/mosip/bean/Compare_Record.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pe/mosip/bean/Comparison_Result.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pe/mosip/bean/Demo_Details.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pe/mosip/bean/Request_Body.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pe/mosip/bean/Responce_Body.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pe/mosip/dao/CompareDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pe/mosip/dao/DemoDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pe/mosip/dao/implementation/CompareDaoimpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pe/mosip/dao/implementation/DemoDaoimpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pe/mosip/service/Deprecated_Compare_Table_Service.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pe/mosip/service/Main_Table_Service.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pe/mosip/service/OutputService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pe/mosip/service/Test_insert_records.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pe/mosip/service/duke_implementation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pe/mosip/util/SessionUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/duke_cfg.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/pe/mosip/ApplicationTests.java" beforeDir="false" />
-    </list>
+    <list default="true" id="865495ad-0b4d-44e7-b28a-740267deebdf" name="Default Changelist" comment="rest api added" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -123,19 +90,6 @@
     <configuration name="insert-test" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.pe.mosip.service.Test_insert_records" />
       <module name="Demographic-Deduplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -243,6 +197,7 @@
       <workItem from="1619193459007" duration="17000" />
       <workItem from="1619202806132" duration="3242000" />
       <workItem from="1619282969969" duration="5985000" />
+      <workItem from="1619554474551" duration="15000" />
     </task>
     <task id="LOCAL-00001" summary="rest api added">
       <created>1615263937220</created>

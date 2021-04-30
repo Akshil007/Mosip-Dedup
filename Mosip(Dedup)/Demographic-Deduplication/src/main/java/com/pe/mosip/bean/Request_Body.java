@@ -18,34 +18,21 @@ public class Request_Body implements Serializable {
 
     String refernceURL;
 
-    Demo_Details demo_details;
+    ArrayList<Demo_Details> records;
 
-    Compare_Record compare_record;
-
-    ArrayList<Compare_Record> records;
-
-    public Request_Body(String id, String version, String requestId, String requestTime, String referenceId, String refernceURL, Demo_Details demo_details, Compare_Record compare_record, ArrayList<Compare_Record> records) {
+    public Request_Body(String id, String version, String requestId, String requestTime, String referenceId, String refernceURL, ArrayList<Demo_Details> records) {
         Id = id;
         this.version = version;
         this.requestId = requestId;
         this.requestTime = requestTime;
         this.referenceId = referenceId;
         this.refernceURL = refernceURL;
-        this.demo_details = demo_details;
-        this.compare_record = compare_record;
         this.records = records;
     }
 
     public Request_Body() {
     }
 
-    public Compare_Record getCompare_record() {
-        return compare_record;
-    }
-
-    public void setCompare_record(Compare_Record compare_record) {
-        this.compare_record = compare_record;
-    }
 
     public String getId() {
         return Id;
@@ -95,19 +82,11 @@ public class Request_Body implements Serializable {
         this.refernceURL = refernceURL;
     }
 
-    public Demo_Details getDemo_details() {
-        return demo_details;
-    }
-
-    public void setDemo_details(Demo_Details demo_details) {
-        this.demo_details = demo_details;
-    }
-
-    public ArrayList<Compare_Record> getRecords() {
+    public ArrayList<Demo_Details> getRecords() {
         return records;
     }
 
-    public void setRecords(ArrayList<Compare_Record> records) {
+    public void setRecords(ArrayList<Demo_Details> records) {
         this.records = records;
     }
 
@@ -120,8 +99,6 @@ public class Request_Body implements Serializable {
                 ", requestTime='" + requestTime + '\'' +
                 ", referenceId='" + referenceId + '\'' +
                 ", refernceURL='" + refernceURL + '\'' +
-                ", demo_details=" + demo_details +
-                ", compare_record=" + compare_record +
                 ", records=" + records +
                 '}';
     }

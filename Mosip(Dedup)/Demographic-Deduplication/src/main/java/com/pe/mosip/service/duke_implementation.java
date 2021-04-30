@@ -1,12 +1,13 @@
 package com.pe.mosip.service;
 import com.pe.mosip.bean.Comparison_Result;
-import com.pe.mosip.dao.CompareDao;
-import com.pe.mosip.dao.implementation.CompareDaoimpl;
+import com.pe.mosip.dao.ThreadDao;
+import com.pe.mosip.dao.implementation.ThreadDaoimpl;
 import no.priv.garshol.duke.*;
 
 import no.priv.garshol.duke.Record;
 import no.priv.garshol.duke.matchers.ClassDatabaseMatchListener;
 import no.priv.garshol.duke.matchers.PrintMatchListener;
+import org.springframework.stereotype.Service;
 import org.xml.sax.SAXException;
 
 import java.io.IOException;
@@ -15,11 +16,12 @@ import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
 
+@Service
 public class duke_implementation{
-    public ArrayList<Comparison_Result> identify() throws IOException, SAXException {
-        CompareDao compareDao=new CompareDaoimpl();
+    public ArrayList<Comparison_Result> identify(String ConfigFilePath, String ThreadName) throws IOException, SAXException {
+        ThreadDao threadDao = new ThreadDaoimpl();
 
-        Configuration config = ConfigLoader.load("src/main/resources/duke_cfg.xml");
+        Configuration config = ConfigLoader.load(ConfigFilePath);
         Processor proc = new Processor(config);
 
         //for storing and getting output in memory
@@ -39,7 +41,7 @@ public class duke_implementation{
         {
             Comparison_Result comparison_result=new Comparison_Result();
             ArrayList<String> list = (ArrayList<String>) i.next();
-            comparison_result.setCompare_record(compareDao.get_record(list.get(0)));
+            comparison_result.setRecord(threadDao.getRecord(list.get(0), ThreadName));
             list.remove(0);
             comparison_result.setMatching_ids(list);
             ans.add(comparison_result);
