@@ -14,7 +14,7 @@ public class ResponceConsumer {
     @JmsListener(destination = "outbound.queue",containerFactory = "out_jmsListenerContainerFactory")
     public void getResponce(Responce_Body responce_body){
         list.add(responce_body);
-        System.out.println(list.size());
+        System.out.println("Output list size:"+list.size());
     }
 
     public static ArrayDeque<Responce_Body> getList() {

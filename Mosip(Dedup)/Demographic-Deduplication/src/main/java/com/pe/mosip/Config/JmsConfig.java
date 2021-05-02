@@ -27,8 +27,8 @@ import java.util.jar.JarEntry;
 public class JmsConfig {
 
 
-    public String in_brokerUrl = "tcp://localhost:5673";
-    public String out_brokerUrl = "tcp://localhost:5674";
+    public String in_brokerUrl = "tcp://localhost:61616";
+    public String out_brokerUrl = "tcp://localhost:61617";
 
 
     @Bean
