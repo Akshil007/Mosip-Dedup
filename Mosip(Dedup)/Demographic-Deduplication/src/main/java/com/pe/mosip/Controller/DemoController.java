@@ -34,7 +34,6 @@ public class DemoController {
 
     @PostMapping(path = "/request")
     public String demo_main(@RequestBody Request_Body request_body) throws IOException, SAXException {
-        System.out.println(getInboundQueue);
         in_jmsTemplate.convertAndSend(getInboundQueue, request_body);
         return "Request Successfully Queued in inbound queue";
     }

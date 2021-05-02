@@ -14,10 +14,10 @@ public class threadConfig {
     @Bean(name = "taskExecutor")
     public Executor taskExecutor() {
         final ThreadPoolTaskExecutor executor = new ThreadPoolTaskExecutor();
-        executor.setCorePoolSize(10);
-        executor.setMaxPoolSize(10);
-        executor.setQueueCapacity(100);
-        executor.setThreadNamePrefix("My-request-Thread-");
+        executor.setCorePoolSize(255);
+        executor.setMaxPoolSize(255);
+        executor.setQueueCapacity(1000);
+        executor.setThreadNamePrefix("MyRequestThread");
         executor.initialize();
         return executor;
     }

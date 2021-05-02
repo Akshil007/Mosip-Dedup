@@ -93,7 +93,7 @@ public class Main_Table_Service {
 
         ThreadDao threadDao = new ThreadDaoimpl();
         String threadName = Thread.currentThread().getName();
-        threadName=threadName.replace("-","");
+
 
         //Individual table creation for each thread
         threadDao.createTable(threadName);
@@ -140,7 +140,6 @@ public class Main_Table_Service {
     private boolean identify(Request_Body request_body, Responce_Body responce_body) throws IOException, SAXException {
 
         String threadName = Thread.currentThread().getName();
-        threadName=threadName.replace("-","");
         String path = "ThreadDukeConfigFiles/duke_"+threadName+"_cfg.xml";
 
         duke_implementation duke_implementation=new duke_implementation();
@@ -156,7 +155,6 @@ public class Main_Table_Service {
         //delete all files made for thread
         ThreadDao threadDao = new ThreadDaoimpl();
         String threadName = Thread.currentThread().getName();
-        threadName=threadName.replace("-","");
 
 
 
