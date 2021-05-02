@@ -16,7 +16,7 @@ public class Request_Body implements Serializable {
 
     String referenceId;
 
-    String refernceURL;
+    String referenceURL;
 
     ArrayList<Demo_Details> records;
 
@@ -26,7 +26,7 @@ public class Request_Body implements Serializable {
         this.requestId = requestId;
         this.requestTime = requestTime;
         this.referenceId = referenceId;
-        this.refernceURL = refernceURL;
+        this.referenceURL = refernceURL;
         this.records = records;
     }
 
@@ -75,11 +75,11 @@ public class Request_Body implements Serializable {
     }
 
     public String getRefernceURL() {
-        return refernceURL;
+        return referenceURL;
     }
 
     public void setRefernceURL(String refernceURL) {
-        this.refernceURL = refernceURL;
+        this.referenceURL = refernceURL;
     }
 
     public ArrayList<Demo_Details> getRecords() {
@@ -98,7 +98,7 @@ public class Request_Body implements Serializable {
                 ", requestId='" + requestId + '\'' +
                 ", requestTime='" + requestTime + '\'' +
                 ", referenceId='" + referenceId + '\'' +
-                ", refernceURL='" + refernceURL + '\'' +
+                ", refernceURL='" + referenceURL + '\'' +
                 ", records=" + records +
                 '}';
     }
